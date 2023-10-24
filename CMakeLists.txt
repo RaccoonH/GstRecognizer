@@ -30,3 +30,5 @@ target_include_directories(gstrecognizer PRIVATE
 set_target_properties(gstrecognizer PROPERTIES CXX_STANDARD 17)
 set_target_properties(gstrecognizer 
     PROPERTIES OUTPUT_NAME "recognizer")
+
+add_compile_definitions(RECOGNIZER_CONFIG_DIRECTORY="${CMAKE_SOURCE_DIR}/config")

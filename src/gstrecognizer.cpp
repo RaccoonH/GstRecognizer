@@ -63,8 +63,8 @@ static void
 gst_recognizer_init(GstRecognizer *filter)
 {
     RecognizerConfig defaultConfig;
-    defaultConfig.model = "./yolov5s.onnx";
-    defaultConfig.classLabelsList = "./classes.txt";
+    defaultConfig.model = std::string(RECOGNIZER_CONFIG_DIRECTORY) + "/yolov5s.onnx";
+    defaultConfig.classLabelsList = std::string(RECOGNIZER_CONFIG_DIRECTORY) + "/classes.txt";
     defaultConfig.scoreThreshold = 0.2;
     defaultConfig.confidenceThreshold = 0.4;
     filter->recognizer = CreateRecognizer(defaultConfig);
