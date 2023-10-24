@@ -63,8 +63,8 @@ static void
 gst_recognizer_init(GstRecognizer *filter)
 {
     RecognizerConfig defaultConfig;
-    defaultConfig.model = "/home/andrey/Desktop/Job/test-tasks/neurus-2/build/yolov5s.onnx";
-    defaultConfig.classLabelsList = "/home/andrey/Desktop/Job/test-tasks/neurus-2/build/classes.txt";
+    defaultConfig.model = "config/yolov5s.onnx";
+    defaultConfig.classLabelsList = "config/classes.txt";
     defaultConfig.scoreThreshold = 0.2;
     defaultConfig.confidenceThreshold = 0.4;
     filter->recognizer = CreateRecognizer(defaultConfig);
