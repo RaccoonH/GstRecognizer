@@ -7,6 +7,7 @@ It uses cmake to build.
 ### Requirements:
 1. opencv >= 4.5.4  
 2. gstreamer  
+3. cmake >= 3.16
 
 You should use GCC >= 11.4.0 (at least it was tested only on GCC 11.4.0)  
 
