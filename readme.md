@@ -3,7 +3,7 @@ Recogniser is a GST plugin which can detect object on frames. It receives YUV420
 It uses YOLOv5.  
 
 ## Build
-It uses cmake to build.
+It uses cmake to build, you can use build.sh.  
 ### Requirements:
 1. opencv >= 4.5.4  
 2. gstreamer  
